@@ -3,25 +3,29 @@ const task = require("./data.json").task;
 export const refreshFrequency = 5000;
 
 const containerClassName = css({
-    color: "rgba(255, 255, 255)",
-    fontFamily: "JetBrains Mono",
-    fontSize: "30px",
-    textAlign: "center",
-    top: "1637px",
-    left: "420px",
-    width: "2160px",
-    position: "absolute",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+  color: "rgba(255, 255, 255)",
+  fontFamily: "Hack Nerd Font Mono",
+  fontSize: "30px",
+  textAlign: "center",
+  width: "100vw",
+  height: "100vh",
+  position: "absolute",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "flex-end",
+});
 
-  });
+const taskClassName = css({
+  color: "rgba(255, 255, 255)",
+  marginBottom: "20px",
+});
 
-  export const render = () => {
-  
-    return (
-      <div className={containerClassName}>
-          <b>Current Task:&nbsp;</b> {task}
+export const render = () => {
+  return (
+    <div className={containerClassName}>
+      <div className={taskClassName}>
+        <b>Current Task:&nbsp;</b> {task}
       </div>
-    );
-  };
+    </div>
+  );
+};
