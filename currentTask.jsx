@@ -5,7 +5,7 @@ export const refreshFrequency = 5000;
 const containerClassName = css({
   color: "rgba(255, 255, 255)",
   fontFamily: "Hack Nerd Font Mono",
-  fontSize: "30px",
+  fontSize: "25px",
   textAlign: "center",
   width: "100vw",
   height: "100vh",
@@ -17,7 +17,6 @@ const containerClassName = css({
 
 const taskClassName = css({
   color: "rgba(255, 255, 255)",
-  marginBottom: "20px",
 });
 
 export const render = () => {
